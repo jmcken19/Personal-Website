@@ -2,7 +2,8 @@
 
 (add your badges here)
 
-> *Your documentation is a direct reflection of your software, so hold it to the same standards.*
+> *A mobile application built to improve the maintenance request process for students, property management, and contractors at UNC Charlotte.
+*
 
 
 ## 🌟 Highlights
