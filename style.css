@@ -386,6 +386,7 @@ footer {
 
 .volleyball-block {
   text-align: left;
+
 }
 
 .volleyball-block h3 {
@@ -402,11 +403,6 @@ footer {
   color: var(--text-secondary);
   font-size: 1rem;
   line-height: 1.65;
-}
-
-.volleyball-portfolio-right {
-  position: sticky;
-  top: 2rem;
 }
 
 .volleyball-image-placeholder {
@@ -432,20 +428,65 @@ footer {
   color: var(--text-primary);
 }
 
-/* Responsive design for Volleyball Portfolio */
-@media (max-width: 768px) {
-  .volleyball-portfolio {
+/* Volleyball Portfolio Layout */
+/* Volleyball Portfolio Layout */
+.volleyball-portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  padding-bottom: 4rem;
+}
+
+.volleyball-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.volleyball-block {
+  text-align: left;
+}
+
+.volleyball-block h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--color-light-accent);
+  padding-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.volleyball-block h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-dark-accent);
+}
+
+.volleyball-block p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.volleyball-row img {
+  width: 100%;
+  height: 260px;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Mobile layout */
+@media (max-width: 800px) {
+  .volleyball-row {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding-bottom: 2rem;
   }
-  
-  .volleyball-portfolio-right {
-    position: static;
-  }
-  
-  .volleyball-image-placeholder {
-    aspect-ratio: 16 / 9;
+
+  .volleyball-row img {
+    height: auto;
   }
 }
 
@@ -513,4 +554,4 @@ footer {
 .contact-card a:hover {
   color: var(--color-dark-accent);
   border-bottom-color: var(--color-dark-accent);
-}
+}
