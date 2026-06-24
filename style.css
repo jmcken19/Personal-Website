@@ -64,6 +64,7 @@ main {
 header {
   border-bottom: 1px solid var(--color-light-accent);
   padding: 1.5rem 0;
+  
 }
 
 header .container {
@@ -562,6 +563,7 @@ footer {
 /* Resume Download Link */
 .resume-download-container {
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 .resume-download-link {
@@ -724,7 +726,7 @@ footer {
 
 /* Projects Page */
 .projects-section {
-  padding: 1rem 0;
+  padding: 5rem 0;
 }
 
 .projects-subtitle {
@@ -739,18 +741,6 @@ footer {
   gap: 4rem;
 }
 
-.project-showcase {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 4rem;
-  align-items: center;
-  background-color: #FFFFFF;
-  border: 1px solid var(--color-light-accent);
-  border-radius: 16px;
-  padding: 2.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
-  transition: var(--transition);
-}
 
 .project-showcase:hover {
   border-color: var(--color-mid-light);
