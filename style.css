@@ -18,6 +18,11 @@
   padding: 0;
 }
 
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-secondary);
@@ -288,7 +293,9 @@ footer {
   }
 
   nav ul {
-    gap: 1.5rem;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .hero-grid {
@@ -314,7 +321,14 @@ footer {
   .entry-date {
     margin-top: 0.1rem;
   }
-  
+
+  .profile-card {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+  }
 }
 
 
