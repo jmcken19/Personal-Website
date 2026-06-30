@@ -846,6 +846,14 @@ footer {
   color: var(--color-mid);
 }
 
+.th-eyebrow-sub {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-mid-light);
+  letter-spacing: 0.08em;
+  margin-top: -0.75rem;
+}
+
 .th-headline {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
   font-weight: 700;
@@ -858,6 +866,20 @@ footer {
   font-size: 1rem;
   color: var(--text-secondary);
   line-height: 1.7;
+}
+
+.th-cta-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  align-self: flex-start;
+  transition: var(--transition);
+}
+
+.th-cta-link:hover {
+  color: var(--color-dark-accent);
 }
 
 .th-cta-btn {
@@ -965,15 +987,21 @@ footer {
   line-height: 1.65;
 }
 
-.th-service-badge {
-  font-size: 0.75rem;
+.th-service-format {
+  font-size: 0.78rem;
   font-weight: 500;
-  color: var(--color-dark-accent);
-  background-color: var(--color-light-accent);
-  padding: 0.2rem 0.65rem;
-  border-radius: 20px;
-  align-self: flex-start;
-  display: inline-block;
+  color: var(--color-mid);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+
+.th-flyer {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 /* Responsive styles for new components */
@@ -1012,6 +1040,33 @@ footer {
   .th-left {
     position: static;
   }
+}
+
+/* ============================================
+   Tech Help Fonts
+   ============================================ */
+
+.th-headline {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 700;
+}
+
+.th-eyebrow,
+.th-eyebrow-sub,
+.th-service-num,
+.th-service-price,
+.th-section-label span,
+.th-cta-btn {
+  font-family: 'DM Mono', monospace;
+}
+
+.th-service-price {
+  font-size: 1.1rem;
+}
+
+.th-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
 }
 
 /* ============================================
