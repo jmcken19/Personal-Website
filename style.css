@@ -135,7 +135,7 @@ nav a:hover:not(.active) {
 }
 
 .hero-right p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-bottom: 1.25rem;
   color: var(--text-secondary);
 }
