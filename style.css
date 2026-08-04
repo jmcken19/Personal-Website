@@ -296,6 +296,56 @@ footer {
 }
 
 /* =====================
+   Writings Page
+   ===================== */
+.writing-entry {
+  margin-bottom: 1.5rem;
+}
+
+.writing-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.writing-soon {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.writing-desc {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Writing article pages */
+.writing-back {
+  font-size: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.writing-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 0.4rem;
+}
+
+.writing-meta {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.writing-body p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+/* =====================
    Contact Page
    ===================== */
 .contact-list {
