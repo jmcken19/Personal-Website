@@ -326,6 +326,17 @@ footer {
   margin-bottom: 1.75rem;
 }
 
+.project-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  font-size: 0.85rem;
+}
+
 .writing-heading {
   font-size: 1.25rem;
   font-weight: 700;
