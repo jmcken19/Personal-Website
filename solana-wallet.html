@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solana Wallet Transactions · James McKenna</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="volleyball.html">Volleyball</a></li>
+      <li><a href="writings.html">Writings</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <p class="writing-back"><a href="projects.html">← Projects</a></p>
+
+      <section class="resume-section">
+        <p class="resume-section-title">Project</p>
+        <h1 class="writing-heading">Solana Wallet Transactions</h1>
+        <p class="writing-meta">Python · SQL · PostgreSQL · Supabase · Jun – Jul 2026</p>
+      </section>
+
+      <section class="resume-section">
+        <div class="writing-body">
+          <p>I built this project out of personal interest in blockchain data. I wanted to see what I could actually pull from a live wallet and do something useful with it, rather than just reading about how it works.</p>
+
+          <p>Using Python, I connected to the Solana API and pulled 500+ transactions from a wallet, parsing each record into a PostgreSQL database hosted on Supabase. Getting the data to land cleanly in the database took more work than expected — the API responses had inconsistent fields depending on the transaction type, so I had to handle edge cases as I went.</p>
+
+          <p>Once the data was in, I wrote SQL queries to track things like transaction counts, fee totals in both SOL and USD, active trading days, and the most-used token across all activity. It was a good exercise in thinking through what questions are actually worth asking before writing the query.</p>
+
+          <p>The most interesting part was connecting a live pricing API to calculate real-time USD values for each token. I then visualized this as an interactive bubble chart, which made it a lot easier to see which tokens had the most volume and value at a glance versus just reading rows in a table.</p>
+
+          <p>This was my first project working with blockchain data end-to-end. It gave me a practical understanding of how on-chain data is structured, how to move it into a relational database, and how to build something visual on top of it.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 James McKenna</p>
+  </footer>
+
+</body>
+</html>
