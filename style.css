@@ -337,6 +337,18 @@ footer {
   font-size: 0.85rem;
 }
 
+.project-entry-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.project-entry-links a {
+  font-size: 0.8rem;
+  color: #888;
+}
+
 .writing-heading {
   font-size: 1.25rem;
   font-weight: 700;
