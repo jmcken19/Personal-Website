@@ -405,6 +405,21 @@ footer {
   display: none;
 }
 
+.project-tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.35rem;
+}
+
+.project-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  color: #999;
+  border: 1px solid #e8e8e8;
+  padding: 0.15rem 0.55rem;
+}
+
 /* =====================
    Contact Page
    ===================== */
