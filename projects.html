@@ -16,7 +16,6 @@
       <li><a href="resume.html">Resume</a></li>
       <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="volleyball.html">Volleyball</a></li>
-      <li><a href="writings.html">Writings</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -28,14 +27,25 @@
       <section class="resume-section">
         <p class="resume-section-title">Projects</p>
 
-        <div class="writing-entry">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="product-management">Product Management</button>
+          <button class="filter-btn" data-filter="event-management">Event Management</button>
+        </div>
+
+        <div class="writing-entry" data-tags="event-management">
+          <span class="writing-title">Halton Arena — First Men's Volleyball Club Match on Campus</span>
+        </div>
+
+        <div class="writing-entry" data-tags="product-management">
           <span class="writing-title">NextOne Foundation</span>
           <div class="project-entry-links">
             <a href="https://www.nextonefoundation.com/" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
         </div>
 
-        <div class="writing-entry">
+        <div class="writing-entry" data-tags="software">
           <span class="writing-title">Solana Wallet Transactions</span>
           <div class="project-entry-links">
             <a href="https://github.com/jmcken19/SolanaWalletTransactions" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -43,7 +53,7 @@
           </div>
         </div>
 
-        <div class="writing-entry">
+        <div class="writing-entry" data-tags="product-management">
           <span class="writing-title">PickFix · Senior Capstone</span>
           <div class="project-entry-links">
             <a href="https://github.com/Darkpenguin1/Senior-Design" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -58,6 +68,21 @@
   <footer>
     <p>&copy; 2026 James McKenna</p>
   </footer>
+
+
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.writing-entry').forEach(entry => {
+          const tags = (entry.dataset.tags || '').split(' ');
+          entry.classList.toggle('hidden', filter !== 'all' && !tags.includes(filter));
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
