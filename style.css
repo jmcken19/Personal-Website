@@ -405,19 +405,43 @@ footer {
   display: none;
 }
 
-.project-tags {
-  display: flex;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-  margin-top: 0.35rem;
+.project-tag {
+  font-size: 0.72rem;
+  color: #aaa;
+  margin-left: 0.5rem;
+  font-weight: 400;
 }
 
-.project-tag {
-  font-size: 0.68rem;
-  letter-spacing: 0.07em;
-  color: #999;
-  border: 1px solid #e8e8e8;
-  padding: 0.15rem 0.55rem;
+/* =====================
+   Article Images
+   ===================== */
+.article-hero {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+.article-img {
+  width: 100%;
+  display: block;
+  margin: 2rem 0;
+}
+
+.article-img-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin: 2rem 0;
+}
+
+.article-img-pair img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
 }
 
 /* =====================
