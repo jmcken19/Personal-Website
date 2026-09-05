@@ -416,7 +416,8 @@ footer {
    Article Images
    ===================== */
 .article-container {
-  max-width: 900px;
+  max-width: 1080px;
+  padding: 0 3rem;
 }
 
 .article-hero {
